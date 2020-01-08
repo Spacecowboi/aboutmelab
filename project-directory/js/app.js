@@ -39,3 +39,5 @@ if(question5.toLowerCase() === 'yes'){
   alert('Correct! I love them!');
 } else
   alert('wrongo! I love games!');
+
+alert('Thanks for playing along ' + greeting + '!');
