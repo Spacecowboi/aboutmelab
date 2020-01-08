@@ -9,3 +9,27 @@ h1{
 p{
     border: 5px solid black;
 }
+
+#witcher{
+    background-color: chartreuse;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+#league{
+    background-color: darkgoldenrod;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+#warcraft{
+    background-color: cadetblue;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+#dragon{
+    background-color: crimson;
+    padding: 5px;
+    border: 2px solid black;
+}
