@@ -1,7 +1,8 @@
 'use strict';
 
 var greeting = prompt('Welcome to my page! What is your name?');
-console.log('The user put in + greeting');
+//console.log(greeting);
+alert('Good to meet you ' + greeting + '!');
 
 
 var question1 = prompt('What do you think my name is?');
