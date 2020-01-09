@@ -71,13 +71,16 @@ var question = ['Where did I grow up?'];
 var answers = ['North Carolina', 'New York', 'Arizona', 'Texas', 'Florida', 'Nevada' ];
 var response = '';
 
-for (var i = 0; i < question.length; i++) {
+for (var i = 0; i <= 6; i++) {
   response = prompt(question[i]);
   if (response.toLowerCase() === answers[i].toLowerCase()){
     alert('You got it!');
     userScore++;
   } else {
-    alert('Nope!');
+    alert('Nope! Not quite!');
+  }
+  while(response !== answers){
+    prompt(question);
   }
 
 }
