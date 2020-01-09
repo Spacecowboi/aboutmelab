@@ -85,4 +85,4 @@ for (var i = 0; i <= 6; i++) {
 
 }
 
-alert('You got ' + userScore + ' correct, out of ' + questions.length + ',' + ' Good job!');
+alert('You got ' + userScore + ' correct, out of ' + answers.length + ',' + ' Good job!');
