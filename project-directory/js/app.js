@@ -41,3 +41,31 @@ if(question5.toLowerCase() === 'yes'){
   alert('wrongo! I love games!');
 
 alert('Thanks for playing along ' + greeting + '!');
+
+//question 6
+//worked with alex pena for this question, great partner
+
+var answer = 2;
+var i = 0;
+
+while( i < 4) {
+  var nquestion = parseInt(prompt('How many siblings do I have?'));
+
+  if(nquestion < answer){
+    //alert('Sorry, too low!');
+    nquestion = parseInt(prompt('Sorry, too low!'));
+    i++;
+
+  }
+  else if (nquestion > answer){
+    //alert('You are too high!');
+    nquestion = parseInt(prompt('Sorry, too high!'));
+    i++;
+  }
+  //else if (nquestion === answer);{
+    alert('You are correct!');
+
+
+
+  }
+}
