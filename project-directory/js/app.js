@@ -68,22 +68,21 @@ alert('The correct answer was 2');
 //question 7
 //global variables
 var userScore = 0;
-var question = ['Where did I grow up?'];
+var question = prompt('Where did I grow up?');
 var answers = ['North Carolina', 'New York', 'Arizona', 'Texas', 'Florida', 'Nevada' ];
 var response = '';
 
-for (var u = 0; u < 6; u++) {
+for (var u = 0; u < answers.length; u++) {
   response = prompt(question[u]);
-  // if (response.toLowerCase() === answers[u].toLowerCase()){
-  //   alert('You got it!');
-  //   userScore++;
-  // } else {
-  //   alert('Nope! Not quite!');
-  //   userScore++;
-  // }
-  if(response.includes(answers)){
+  if (response.toLowerCase() === answers[u].toLowerCase()){
+    alert('You got it!');
+    userScore++;
     break;
-  }
+  } else
+    alert('Nope! Not quite! Try again!');
+  prompt('Where did I grow up?');
+  userScore++;
+
 
 }
 
