@@ -45,7 +45,7 @@ alert('Thanks for playing along ' + greeting + '!');
 //question 6
 //worked with alex pena for this question, great partner
 
-var answer = 2;
+var answer = '2';
 var i = 0;
 
 while( i < 4) {
@@ -66,21 +66,23 @@ while( i < 4) {
 alert('The correct answer was 2');
 //Chance, if you are reading this, it was a damn semicolon right after the parenthesis in the third if else. A SEMICOLON.
 //question 7
+//global variables
 var userScore = 0;
 var question = ['Where did I grow up?'];
 var answers = ['North Carolina', 'New York', 'Arizona', 'Texas', 'Florida', 'Nevada' ];
 var response = '';
 
-for (var i = 0; i <= 6; i++) {
-  response = prompt(question[i]);
-  if (response.toLowerCase() === answers[i].toLowerCase()){
-    alert('You got it!');
-    userScore++;
-  } else {
-    alert('Nope! Not quite!');
-  }
-  while(response !== answers){
-    prompt(question);
+for (var u = 0; u < 6; u++) {
+  response = prompt(question[u]);
+  // if (response.toLowerCase() === answers[u].toLowerCase()){
+  //   alert('You got it!');
+  //   userScore++;
+  // } else {
+  //   alert('Nope! Not quite!');
+  //   userScore++;
+  // }
+  if(response.includes(answers)){
+    break;
   }
 
 }
