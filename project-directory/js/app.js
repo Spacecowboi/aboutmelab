@@ -49,23 +49,20 @@ var answer = 2;
 var i = 0;
 
 while( i < 4) {
-  var nquestion = parseInt(prompt('How many siblings do I have?'));
+
+  var nquestion = prompt('How many siblings do I have?');
 
   if(nquestion < answer){
-    //alert('Sorry, too low!');
-    nquestion = parseInt(prompt('Sorry, too low!'));
+    alert('Sorry, too low!');
     i++;
-
-  }
-  else if (nquestion > answer){
-    //alert('You are too high!');
-    nquestion = parseInt(prompt('Sorry, too high!'));
+  }else if (nquestion > answer){
+    alert('You are too high!');
     i++;
-  }
-  //else if (nquestion === answer);{
+  }else if (nquestion == 2){
     alert('You are correct!');
-
-
-
+    break;
   }
 }
+alert('The correct answer was 2');
+//Chance, if you are reading this, it was a damn semicolon right after the parenthesis in the third if else. A SEMICOLON.
+
