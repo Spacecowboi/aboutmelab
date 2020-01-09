@@ -65,4 +65,21 @@ while( i < 4) {
 }
 alert('The correct answer was 2');
 //Chance, if you are reading this, it was a damn semicolon right after the parenthesis in the third if else. A SEMICOLON.
+//question 7
+var userScore = 0;
+var question = ['Where did I grow up?'];
+var answers = ['North Carolina', 'New York', 'Arizona', 'Texas', 'Florida', 'Nevada' ];
+var response = '';
 
+for (var i = 0; i < question.length; i++) {
+  response = prompt(question[i]);
+  if (response.toLowerCase() === answers[i].toLowerCase()){
+    alert('You got it!');
+    userScore++;
+  } else {
+    alert('Nope!');
+  }
+
+}
+
+alert('You got ' + userScore + ' correct, out of ' + questions.length + ',' + ' Good job!');
